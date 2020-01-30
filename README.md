@@ -1,6 +1,8 @@
 # MADCS
 Modular Advanced Drone Control System - Version Core-1.0
 
+**INCOMPLETE**
+
 This repository contains the software stack for the LR-01 hybrid UAV. It acts as the primary control interface for the drone.
 It is designed to run as a service on top of a Linux operating system on the core control unit.
 
