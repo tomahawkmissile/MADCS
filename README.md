@@ -21,8 +21,9 @@ The software needs to handle:
 - System-critical voltage rails
 - Communication with RADAR transceivers and communication controllers
 - Communication with Supervisor Controller
+- Primary coolant loop temperature
 
-All other system interfaces are routed through the supervisor controller, which can be read by the core control unit via:
+All other system interfaces are routed through the supervisor controller, which can be accessed by the core control unit via:
 - Shared primary CAN bus
 - Shared secondary CAN bus
 - Direct UART communication (should only be used for critical operations)
