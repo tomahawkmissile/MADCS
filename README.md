@@ -5,6 +5,7 @@ This repository contains the software stack for the LR-01 hybrid UAV. It acts as
 It is designed to run as a service on top of a Linux operating system on the core control unit.
 
 Core Control Unit Specifications:
+- Custom 10-layer PCB
 - TI-AM3354 Arm Cortex A8
 - 512MB DDR3 RAM
 - 2x16GB eMMC flash
