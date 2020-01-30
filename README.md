@@ -33,4 +33,5 @@ Status: CONCEPT
 - Software progress: 0%
 - Hardware progress: 25%
 
-**Repository will be initiated shortly with data transferred from the main private repository.**
+**Repository will be updated shortly with data transferred from the main private repository.**
+**I do not document my code and I also compact it, so it may be difficult to read**
