@@ -1,0 +1,18 @@
+struct loadstr;
+struct loadstr oled_loadman(const char* file);
+static void sendChar(unsigned char data);
+static void sendCharReg(unsigned char data, unsigned char reg);
+static void sendShort(unsigned int data);
+static void sendShortReg(unsigned int data, unsigned char reg);
+static void sendDisplayInitCommands();
+void oled_clearBuffer();
+void oled_fillBuffer(unsigned char fill);
+void oled_displayBuffer();
+void oled_writePixel(int x,int y,int state);
+void oled_writeImage(const char* path,int x,int y);
+void oled_writeChar(char c, int x, int y);
+void oled_writeString(const char* data, int x, int y, int maxl, int* h);
+void oled_scrollVert(int direction,int amount);
+void oled_clear();
+void oled_displayAdafruitLogo();
+void oled_initOLED(char addr);

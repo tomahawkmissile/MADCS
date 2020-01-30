@@ -1,0 +1,1 @@
+extern unsigned char symbols_8x5[470];

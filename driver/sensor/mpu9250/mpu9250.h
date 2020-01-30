@@ -1,0 +1,30 @@
+typedef unsigned short uint16_t;
+typedef unsigned char uint8_t;
+typedef signed char int8_t;
+typedef signed short int16_t;
+typedef unsigned int uint32_t;
+typedef signed int int32_t;
+
+void MPU9250_MadgwickQuaternionUpdate(float ax, float ay, float az, float gx, float gy, float gz, float mx, float my, float mz);
+void MPU9250_MahonyQuaternionUpdate(float ax, float ay, float az, float gx, float gy, float gz, float mx, float my, float mz);
+static void writeRaw8(int fd, uint8_t data);
+static void writeReg8(int fd, uint8_t reg, uint8_t data);
+static uint8_t readRaw8(int fd);
+static uint8_t readReg8(int fd, uint8_t reg);
+static void alternateReadReg8(int fd, uint8_t reg, uint8_t* data, uint8_t count);
+static void readAccelData(int16_t* buffer);
+static void readGyroData(int16_t* buffer);
+static void readMagnetData(int16_t* buffer);
+static int16_t readTempData();
+void MPU9250_reset();
+static void setupGyroAccel();
+static void calibrateGyroAccel(float* bufferA, float* bufferB);
+static void testGyroAccel(float* destination);
+static void setupMagnet(float* buffer);
+void MPU9250_setupSensors();
+void MPU9250_setupComs(char gyroAddress,char magAddress);
+typedef struct {
+	float axx,ayy,azz,gxx,gyy,gzz,mxx,myy,mzz;
+	int16_t tempDataA;
+} mpu9250_data;
+mpu9250_data MPU9250_readAllData();
