@@ -35,7 +35,7 @@ All other system interfaces are routed through the supervisor controller, which 
 
 Status: CONCEPT
 - Software progress: 0%
-- Hardware progress: 33%
+- Hardware progress: 70%
 
-**Repository will be updated shortly with data transferred from the main private repository.**
+**Repository will be updated ~~shortly~~ with data transferred from the main private repository.**
 **I do not document my code and I also compact it, so it may be difficult to read**
